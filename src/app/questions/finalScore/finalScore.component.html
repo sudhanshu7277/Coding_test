@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <div class="row questions_steps">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <a class="mdl-navigation__link" [routerLink]="['/question3']">
+          <img src="../../../assets/prev.jpg">
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-10 text-right">
+        <h5>
+          <span>Step </span>
+          <span>{{ finalStep }} / {{ totalSteps }}</span>
+        </h5>
+      </div>
+    </div>
+    <div class="row questions_body">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <p>{{ result }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <p>{{ displayFinalScore }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <div class="row questions_steps">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-right">
+        <h5>
+          <span>Step </span>
+           <span>{{ firstStep }} / {{ totalSteps }}</span>
+        </h5>
+      </div>
+    </div>
+    <div class="row questions_body">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <p>{{firstQuestion}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <span>
+          <button class="btn btn-default btn-lg option_buttons" (click)="redirectTwoQuestion2(true)">yes</button>
+        </span>
+        <span>
+          <button class="btn btn-default btn-lg option_buttons" (click)="redirectTwoQuestion2(false)">no</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

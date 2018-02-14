@@ -1,0 +1,40 @@
+<div class="container">
+  <div>
+    <div class="row questions_steps">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <a class="mdl-navigation__link" [routerLink]="['/question2']">
+          <img src="../../../assets/prev.jpg">
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-10 text-right">
+        <h5>
+          <span>Step </span>
+          <span>{{ thirdStep }} / {{ totalSteps }}</span>
+        </h5>
+      </div>
+    </div>
+    <div class="row questions_body">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <p>{{thirdQuestion}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 text-center">
+        <form (ngSubmit)="f.form.valid" #f="ngForm" novalidate>
+          <span>
+            <button class="btn btn-default btn-lg option_buttons" [disabled]="!f.form.valid" (click)="getFinalScore(1)">1</button>
+          </span>
+          <span>
+            <button class="btn btn-default btn-lg option_buttons" [disabled]="!f.form.valid" (click)="getFinalScore(2)">2</button>
+          </span>
+          <span>
+            <button class="btn btn-default btn-lg option_buttons" [disabled]="!f.form.valid" (click)="getFinalScore(3)">3</button>
+          </span>
+          <span>
+            <button class="btn btn-default btn-lg option_buttons" [disabled]="!f.form.valid" (click)="getFinalScore(4)">4</button>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

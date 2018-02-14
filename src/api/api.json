@@ -1,0 +1,25 @@
+[
+    {
+    "id": 1,
+    "question": "Is the color of grass green ?",
+    "score": 1,
+    "tags": ["home", "green"]
+},
+{
+    "id": 2,
+    "question": "How would you rate yourself in coding on a scale of 1 to 5 ?",
+    "score": 2,
+    "tags": ["home", "green"]
+},
+{
+    "id": 3,
+    "question": "Is Donald trump the 45th president of USA ?",
+    "score": 3,
+    "tags": ["home", "green"]
+},{
+    "id": 4,
+    "question": "A green door",
+    "score": 4,
+    "tags": ["home", "green"]
+}
+]
